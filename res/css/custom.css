@@ -1,8 +1,180 @@
-.footer-margin {
-	margin-top: 244px;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+footer{
+	background-color: #750c0c;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	opacity: 0.9;
+	padding: 10px;
+  }
 .hidden-link {
 	color: inherit;
 	text-decoration: none;
 	font-weight: normal;
 }
+
+body, html {
+	height: 100%;
+	margin: 0;
+  }
+body{
+	background-image: url("../img/bg1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+.header{
+	background-color: #750c0c;
+	padding: 6px 0px;
+	position: fixed;
+	width: 100%;
+	opacity: 1;
+	z-index: 999;
+  }
+
+  .centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  .black{
+	background-color: black;
+	opacity: 0.3;
+	width: 1000px;
+	height: 100vh;
+  }
+  .bg{
+	width: 1000px;
+  }
+  @media all and (max-width:1100px) {
+	.black, .bg{
+	  width: 90%;
+	}
+  }
+  .all{
+	color: #d4d4d4;
+	text-align: center;
+	text-transform: uppercase;
+  }
+  .all hr{
+	background-color: #fff;
+	margin: 10px auto;
+	width: 80%;
+  }
+  .all p{
+	color: #c4c0c0;
+	text-transform: none;
+	width: 85%;
+	padding: 0 10px 0 10px;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+  }
+  .icon img{
+	display: none;
+	margin: 0 auto;
+  }
+  @media all and (max-width:500px) {
+	.icon img{
+	  display: block;
+	}
+  }
+  .logo img{
+	width: 250px;
+	height: 250px;
+	display: block;
+	margin: 10px auto;
+  }
+  @media all and (max-width:500px) {
+	.logo img{
+	  display: none;
+	}
+  }
+  .info_and_status{
+	padding: 0 10px;
+	font-family: 'Inconsolata', monospace;
+  }
+  #status{
+	font-size: 32px;
+  }
+  #sv_ip{
+	font-weight: bold;
+  }
+  .info_and_status h1{
+	font-size: 35px;
+	margin: 6px 0;
+  }
+  .info_and_status h2{
+	font-size: 25px;
+	margin: 3px 0;
+  }
+  .info_and_status h3{
+	font-size: 25px;
+	margin: 3px 0;
+  }
+  .info_and_status a, .info_and_status a:hover{
+	color: #d4d4d4;
+	font-size: 25px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 30% 0 30% 0;
+	background-color: #b51010;
+	max-width: 500px;
+	display: block;
+	margin: 10px auto;
+	padding: 3px 0;
+	animation: jump 2s infinite;
+  
+  }
+  .info_and_status a:hover{
+	background-color: #850b0b;
+  }
+  @keyframes jump {
+	0%{
+	  opacity: 0.5;
+	  box-shadow: 0 3px 8px 1px black;
+	  transform: scale(0.9);
+	  letter-spacing: 1px;
+	}
+	50%{
+	  opacity: 0.9;
+	  box-shadow: 0 3px 8px 1px #b51010;
+	  transform: scale(1);
+	  letter-spacing: -1px;
+	}
+	100%{
+	  opacity: 0.5;
+	  box-shadow: 0 3px 8px 1px black;
+	  transform: scale(0.9);
+	  letter-spacing: 1px;
+	}
+  }
+  @media all and (max-width:650px) {
+	.info_and_statusa a{
+	  width: 90%;
+	}
+  }
+  @media all and (max-width:500px) {
+	#status{
+	  font-size: 23px;
+	}
+	.info_and_status h1{
+	  font-size: 25px;
+	}
+	.info_and_status h2{
+	  font-size: 18px;
+	}
+	.info_and_status h3{
+	  font-size: 18px;
+	}
+	.info_and_status a, .info_and_status a:hover{
+	  font-size: 18px;
+	}
+  }

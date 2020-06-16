@@ -7,26 +7,11 @@ return (object) array(
 	
 	'navbarlinks' => array(
         "Home",
-        ""
     ),
 	
 	'navbarlinkdestinations' => array(
-        "./",
-        "#"
+        "./index"
     ),
-	
-	'servernames' => array(
-        "Un debut de serveur"
-    ),
-	
-	'serverips' => array(
-        "lacombe92101.synology.me"
-    ),
-	
-	'serverports' => array(
-        "25565"
-    )
-	
 );
 
 ?>

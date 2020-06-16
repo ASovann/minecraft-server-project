@@ -29,7 +29,8 @@
 	
 	<div class="row">
 		<nav>
-			<div class="nav-wrapper indigo">
+		<div class="header">
+			<div class="nav-wrapper">
 				<div class="col s12">
 					<a href="<?php echo $configs->title_link?>" class="brand-logo"><?php echo $configs->title?></a>
 					<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -61,5 +62,6 @@
 					</ul>
 				</div>
 			</div>
+		</div>
 		</nav>
 	</div>
