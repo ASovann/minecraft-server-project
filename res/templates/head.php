@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+<!-- Load Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <!-- Load Font Awesome -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -18,8 +18,28 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 <!-- Load Custom CSS -->
 	<link rel="stylesheet" href="./res/css/custom.css">
-<!-- Load Config.php File -->
-	<?php $configs = include('./res/templates/config.php');?>
+<!-- Load Icon Server-->
+    <link rel="icon" href="https://api.mcsrvstat.us/icon/lacombe92101.synology.me">
+
+
+	<?php
+		//load config 
+		$configs = include('./res/templates/config.php');
+		// get ip server
+		$serverip = $configs -> ipaddress;
+		//get port id
+		$serverport =  $configs -> port;
+		//call api
+		$status = json_decode(file_get_contents('https://api.mcsrvstat.us/2/' . $serverip));
+		//check server status
+		if($status -> online == true)
+        {
+            $online = true;
+
+        }else {
+            $online = false;
+        }
+	?>
 
 <!-- Load Nav Bar -->
 

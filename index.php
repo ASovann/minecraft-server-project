@@ -1,23 +1,12 @@
 <html>
+<head>
+    
     <?php include './res/templates/head.php';?>
-    <link rel="stylesheet" type="text/css" href="./res/css/custom.css">
-    <link rel="icon" href="https://api.mcsrvstat.us/icon/lacombe92101.synology.me">
-
+   
 </head>
 <body>
 <div class="container">
 	<?php
-		$serverip = 'lacombe92101.synology.me';
-        $serverport =  '25565';
-                    
-        $status = json_decode(file_get_contents('https://api.mcsrvstat.us/2/' . $serverip));
-        if($status -> online == true)
-        {
-            $online = true;
-
-        }else {
-            $online = false;
-        }
         echo'
             <div class="black centered"></div>
 
@@ -40,7 +29,7 @@
 
                         echo '</div> 
                         <div class="info_and_status">
-                            <h1><span id="sv_ip">lacombe92101.synology.me</span><br>
+                            <h1><span id="sv_ip">' . $configs -> ipaddress . '</span><br>
                             <span id="status">status: ';
                             if($online) {
                                 echo 'ONLINE';
@@ -76,8 +65,7 @@
                     </div>
                 </div>
             </div>
-        '
-
+        ';
     ?>
 </div>
 	<?php include './res/templates/footer.php';?>

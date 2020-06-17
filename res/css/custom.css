@@ -186,4 +186,5 @@ body{
   }
   .list {
 	  margin: 10% 10% 10% 10%;
+	  overflow-y: hidden;
   }
