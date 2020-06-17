@@ -61,6 +61,12 @@
                             if($online) {
                                 echo $status -> version;
                             }
+                            echo '</h3><h3 id="version">Motd: ';
+                            if($online) {
+                                foreach($status -> motd -> html as $motd){
+                                    echo $motd .'<br />';
+                                };
+                            }
                             echo '</h3>';
                             if($online){
                                 echo '<a href="./map">MAP</a>';      
