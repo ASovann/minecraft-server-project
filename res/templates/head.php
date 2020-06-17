@@ -19,7 +19,7 @@
 <!-- Load Custom CSS -->
 	<link rel="stylesheet" href="./res/css/custom.css">
 <!-- Load Icon Server-->
-    <link rel="icon" href="https://api.mcsrvstat.us/icon/lacombe92101.synology.me">
+    <link rel="icon" href="./res/img/favicon.ico">
 
 
 	<?php

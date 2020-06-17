@@ -10,13 +10,15 @@ return (object) array(
 	'navbarlinks' => array(
         "Home",
         "Map",
-        "List Player"
+        "List Player",
+        "Info Server"
     ),
 	
 	'navbarlinkdestinations' => array(
         "./index",
         "./map",
-        "./playerlist"
+        "./playerlist",
+        "./info"
     ),
 
 );
