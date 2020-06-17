@@ -7,10 +7,14 @@ return (object) array(
 	
 	'navbarlinks' => array(
         "Home",
+        "Map",
+        "List Player"
     ),
 	
 	'navbarlinkdestinations' => array(
-        "./index"
+        "./index",
+        "./map",
+        "./playerlist"
     ),
 );
 

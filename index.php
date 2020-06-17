@@ -62,7 +62,7 @@
                 }
                 echo '</h3>';
                 if($online){
-                    echo '<a href="">MAP</a>';      
+                    echo '<a href="./map">MAP</a>';      
                 }
                 echo '
             </div>

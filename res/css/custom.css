@@ -18,7 +18,6 @@ footer{
 	text-decoration: none;
 	font-weight: normal;
 }
-
 body, html {
 	height: 100%;
 	margin: 0;
@@ -38,7 +37,13 @@ body{
 	opacity: 1;
 	z-index: 999;
   }
-
+  .side-nav {
+	background-color: #750c0c;
+	
+	}
+	.side-nav a{
+		color: #fff;
+	}
   .centered {
 	position: absolute;
 	top: 50%;
@@ -100,6 +105,7 @@ body{
   .info_and_status{
 	padding: 0 10px;
 	font-family: 'Inconsolata', monospace;
+	color:#fff;
   }
   #status{
 	font-size: 32px;
